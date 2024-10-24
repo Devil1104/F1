@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Counter with Timer and Auto-Playing Video</title>
+  </head>
+  <body>
+    <h2>Challenge Your Speed</h2>
+    <h3>
+      Click the button continuosly for 25 sec.<br />
+      A F1 driver has a speed of 135 clicks per 25 sec.
+    </h3>
+    <button id="startButton">Start</button>
+
+    <!-- Container for the new screen -->
+    <div id="newScreen" style="display: none">
+      <h2>Timer: <span id="timer">25</span> seconds</h2>
+      <button id="clickMeButton">Click Me</button>
+      <p>Clicks: <span id="clickCount">0</span></p>
+    </div>
+
+    <!-- Container for the video screen -->
+    <div id="videoScreen" style="display: none">
+      <video id="endVideo" width="640" height="360" autoplay loop playsinline>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
