@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport meta tag -->
     <title>Click Counter with Timer and Auto-Playing Video</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+      #newScreen,
+      #videoScreen {
+        display: none;
+      }
+      video {
+        width: 100%; /* Make the video responsive */
+        height: auto; /* Maintain aspect ratio */
+      }
+      button {
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 16px; /* Increase font size for better touch access */
+        margin: 10px; /* Add space around buttons */
+      }
+      h2 {
+        font-size: 24px; /* Responsive heading */
+      }
+    </style>
   </head>
   <body>
     <h2>Challenge Your Speed</h2>
@@ -22,7 +47,7 @@
 
     <!-- Container for the video screen -->
     <div id="videoScreen" style="display: none">
-      <video id="endVideo" width="640" height="360" autoplay loop playsinline>
+      <video id="endVideo" autoplay loop playsinline>
         <source src="video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
